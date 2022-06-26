@@ -19,14 +19,14 @@ module.exports = {
       remotes: {
         app1: 'app1@http://localhost:3001/remoteEntry.js',
       },
-      shared: {
-        ...deps,
-        react: { singleton: true, requiredVersion: deps.react },
-        'react-dom': {
-          singleton: true,
-          requiredVersion: deps['react-dom'],
-        },
-      },
+      // shared: {
+      //   ...deps,
+      //   react: { singleton: true, requiredVersion: deps.react },
+      //   'react-dom': {
+      //     singleton: true,
+      //     requiredVersion: deps['react-dom'],
+      //   },
+      // },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
